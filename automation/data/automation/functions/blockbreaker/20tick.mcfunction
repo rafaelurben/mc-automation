@@ -1,0 +1,6 @@
+execute as @e[type=minecraft:armor_stand,tag=blockbreaker] at @s if block ~ ~ ~ minecraft:dropper[triggered=false,facing=north] unless block ~ ~ ~-1 #automation:undestroyable run function automation:blockbreaker/run
+execute as @e[type=minecraft:armor_stand,tag=blockbreaker] at @s if block ~ ~ ~ minecraft:dropper[triggered=false,facing=east] unless block ~1 ~ ~ #automation:undestroyable run function automation:blockbreaker/run
+execute as @e[type=minecraft:armor_stand,tag=blockbreaker] at @s if block ~ ~ ~ minecraft:dropper[triggered=false,facing=south] unless block ~ ~ ~1 #automation:undestroyable run function automation:blockbreaker/run
+execute as @e[type=minecraft:armor_stand,tag=blockbreaker] at @s if block ~ ~ ~ minecraft:dropper[triggered=false,facing=west] unless block ~-1 ~ ~ #automation:undestroyable run function automation:blockbreaker/run
+execute as @e[type=minecraft:armor_stand,tag=blockbreaker] at @s if block ~ ~ ~ minecraft:dropper[triggered=false,facing=down] unless block ~ ~-1 ~ #automation:undestroyable run function automation:blockbreaker/run
+execute as @e[type=minecraft:armor_stand,tag=blockbreaker] at @s if block ~ ~ ~ minecraft:dropper[triggered=false,facing=up] unless block ~ ~1 ~ #automation:undestroyable run function automation:blockbreaker/run
